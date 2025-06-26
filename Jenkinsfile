@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/raviprasad-y/RestSharpAPIAutomation.git'
+                git 'https://github.com/manideepgithubinfy/RestSharp-APIAutomation.git'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
             steps {
                 publishHTML([
                     reportDir: 'TestResults',
-                    reportFiles: 'index.html',
+                    reportFiles: 'APIReportSharp.html',
                     reportName: 'RestSharp API Test Report'
                 ])
             }
